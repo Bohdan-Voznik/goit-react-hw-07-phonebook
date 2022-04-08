@@ -12,7 +12,7 @@ import {
 } from './Contact.styled';
 import { ReactComponent as IconDelete } from '../../../img/cross.svg';
 import { Spiner } from 'components/Spiner/Spiner';
-import { useDeleteContactMutation } from 'components/redux/contacts/contactsSlise';
+import { useDeleteContactMutation } from '../../../redux/contacts/contactsSlise';
 
 export const Contact = ({ id, name, number, avatar, isOnline }) => {
   const [deleteContact, { isLoading: isDeleting }] = useDeleteContactMutation();
@@ -61,4 +61,6 @@ Contact.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   number: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
 };

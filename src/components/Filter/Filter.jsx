@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { Input } from './Filter.styled';
 
-import { changeFilter } from 'components/redux/contacts/contacts-actions';
+import { changeFilter } from '../../redux/contacts/contacts-actions';
 
 export const Filter = () => {
   const tag = useSelector(state => state.filter);

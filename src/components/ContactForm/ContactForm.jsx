@@ -16,7 +16,7 @@ import { ReactComponent as IconAdd } from '../../img/plus.svg';
 import {
   useAddContactMutation,
   useQueryState,
-} from 'components/redux/contacts/contactsSlise';
+} from '../../redux/contacts/contactsSlise';
 import { Spiner } from 'components/Spiner/Spiner';
 
 const AVATARS_IMAGE = [
